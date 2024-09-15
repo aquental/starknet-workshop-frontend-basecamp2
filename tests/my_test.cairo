@@ -5,7 +5,7 @@ use workshop_frontend::IHelloStarknetDispatcherTrait;
 
 #[test]
 fn test_get_balance() {
-    let contract = declare("HelloStarknet").unwrap();
+    let contract = declare("AQuentalToken").unwrap();
     let (contract_address, _) = contract.deploy(@ArrayTrait::new()).unwrap();
     let dispatcher = IHelloStarknetDispatcher { contract_address};
     let balance = dispatcher.get_balance();
