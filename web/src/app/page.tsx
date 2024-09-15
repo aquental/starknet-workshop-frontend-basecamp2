@@ -34,7 +34,7 @@ const Page: React.FC = () => {
   // Step 2 --> Read your balance -- End
 
   // Step 3 --> Read from a contract -- Start
-  const contractAddress = "0x1e599a44cb196b0fa8e6af83457301e89adfb32e158fa3044cc57c4a823e877";
+  const contractAddress = "0x010851e15fb312a325d1d9a54bc753b200d8059c3e3fcc51dff782a0cfc7f86a";
   const { data: readData, refetch: dataRefetch, isError: readIsError, isLoading: readIsLoading, error: readError } = useContractRead({
     functionName: "get_balance",
     args: [],
